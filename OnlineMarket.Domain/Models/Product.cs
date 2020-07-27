@@ -13,5 +13,11 @@ namespace OnlineMarket.Domain.Models
         public string Title { get; set; }
 
         public decimal MinimumAmount { get; set; }
+
+        public virtual Category Category { get; set; }
+
+        public virtual ICollection<WarehouseEntrance> WarehouseEntrances { get; set; }
+
+        public virtual ICollection<Sell> Sells { get; set; }
     }
 }

@@ -17,5 +17,7 @@ namespace OnlineMarket.Domain.Models
         public string EntrancePersianDate { get; set; }
 
         public string FactorNumber { get; set; }
+
+        public virtual Product Product { get; set; }
     }
 }

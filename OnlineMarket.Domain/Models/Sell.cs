@@ -21,5 +21,7 @@ namespace OnlineMarket.Domain.Models
         public string SellPersianDate { get; set; }
 
         public long Price { get; set; }
+
+        public virtual Product Product { get; set; }
     }
 }
